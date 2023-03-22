@@ -3,12 +3,14 @@
     <head>
 <meta charset="utf-8" />
 <title>Personal Portfolio Oussema</title>
+<link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <a name="TopOfThePage"></a>
-        <a href="#DownOfThePage"> Let's go down </a>
         <!-- header part -->
         <header>
+            <a name="TopOfThePage"></a>
+            <a class="godown" href="#DownOfThePage"> Let's go down </a>
+            <br>
             <nav>
     <a href="#Home">Home</a>
     <a href="#About">About</a>
@@ -24,7 +26,7 @@
 <section>
 <h2>About</h2>
 <h3>BOUSSARSAR OUSSEMA</h3>
-<img 
+<img id="img"
 width="250px"
 height="250px"
 src="./photos/272803167_4380067402099035_5179995858461576646_n.jpg" alt="logo" />
@@ -45,7 +47,8 @@ src="./photos/272803167_4380067402099035_5179995858461576646_n.jpg" alt="logo" /
 <!--contact section-->
 <section>
     <h2>Contact</h2>
-    <form>
+    <form class="forms">
+    
         <label>
             <input type="text" placeholder="Enter your name">
         </label>
@@ -58,13 +61,14 @@ src="./photos/272803167_4380067402099035_5179995858461576646_n.jpg" alt="logo" /
         <label>
             <input type="password" placeholder="Enter your password">
         </label>
+        <button id="click">submit</button>
     </form>
 </section>
         </main>
         <!-- footer part -->
         <footer>
 <h6>© 2023 All rights reserved.</h6>
-<a href="#TopOfThePage"> Let's go up top </a>
+<a class="godown" href="#TopOfThePage"> Let's go up top </a>
 <a name="DownOfThePage"></a>
         </footer>
     </body>
